@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ha-Fish Online Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="custom2.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark background-nav">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <span id="namabrand" class="fw-bold">Ha-Fish</span>
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggler-navigasi" aria-controls="toggler-navigasi" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              
+                <div class="collapse navbar-collapse justify-content-end align-center" id="toggler-navigasi">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="wrntext fw-bolder">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#meja">
+                                <span class="wrntext fw-bolder">About</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produk">
+                                <span class="wrntext fw-bolder">Product</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-lg-5 d-sm-none d-md-inline">
+                            <a class="btn tombol" href="#pemesanan">
+                                Buy Now
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <section id="meja" class="container-fluid">
+        <div class="container-lg">
+            <div class="row bg-opacity-75 bg-light container-fluid m-0">
+                <div class="col col-md-5 p-0 m-0">
+                    <h1 id="whyus" class="text-center h5 fw-bolder">About Us</h1>
+                    <h2 id="aboutus" class="text-sm-start text-md-center text-lg-center display-6 fw-bolder">WHY CHOOSE US</h2>
+                    <h3 class="h2 mt-5">What makes our fish special?</h3>
+                    <p class="lead my-3 fs-2">
+                        Our fish are strictly selected and only trusted 
+                        organic farms can supply our fish, because our 
+                        restaurant motto is delicious and healthy.
+                    </p>
+                </div>
+                <div class="col text-center d-none d-md-block p-0">
+                    <img src="gambar/intro ikan.jpg" alt="introfish" class="img-fluid">
+                </div>
+            </div>
+        </div>     
+    </section>
+    <section id="produk" class="container-fluid">
+        <div class="container-lg">
+            <div class="text-center">
+                <h1 id="menu" class="h5">Product</h1>
+                <h2 class="display-6 text-lg-center fw-bolder">OUR MENU</h2>
+            </div>
+        </div>
+        <div class="container-fluid row justify-content-evenly p-5">
+            <div class="col-md-4 p-5">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <img src="gambar/tuna.jpg" alt="tuna" class="card-img-top"> 
+                    </div>
+                    <div class="card-body py-1">
+                        <div class="card-title fishtitle fs-4">fresh grilled tuna</div>
+                        <div class="card-subtitle lead fisH">ID #01</div>
+                        <p class="card-text fs-6">Price Rp. 80.000</p>
+                    </div>
+                    <div class="d-flex m-2 justify-content-end">
+                        <a href="#pemesanan" class="btn btn-outline-primary-mt-0 border-dark">BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-5">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <img src="gambar/salmon.jpg" alt="tuna" class="card-img-top">
+                    </div>
+                    <div class="card-body py-1">
+                        <div class="card-title fishtitle fs-4">grilled salmon in soy sauce</div>
+                        <div class="card-subtitle lead fisH">ID #02</div>
+                        <p class="card-text fs-6">Price Rp. 70.000</p>
+                    </div>
+                    <div class="d-flex m-2 justify-content-end">
+                        <a href="#pemesanan" class="btn btn-outline-primary-mt-0 border-dark">BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid pb-5" id="pemesanan">
+        <div class="container-lg">
+            <h1 id="booking" class="display-1 text-center">
+                BOOKING
+            </h1>
+        </div>
+        <div id="round" class="mt-5 m-auto card bg-transparent border-5 w-50 p-5">
+            <form >
+                <div class="mb-3">
+                    <label class="form-label">ID Product</label>
+                    <input type="text" class="form-control" placeholder="e.g. #033">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Amount</label>
+                    <input type="text" class="form-control" placeholder="e.g. 2 or 3">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" placeholder="e.g. 011222333444">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Address</label>
+                    <input type="text" class="form-control" placeholder="you can use the google maps link">
+                </div>
+            </form>
+            <div class="d-grid gap-2 mt-2">
+                <button id="submit" class="btn btn-secondary" type="button">Submit</button>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="jscript.js"></script>
+    <script>
+        var sub = document.getElementById("submit");
+        var check = document.getElementById("Check1");
+
+        sub.addEventListener("click", redirect);
+
+        function redirect(){
+                alert("Thank you for ordering")
+                location.href = "menu-product.html";
+        }
+    </script>
+</body>
+</html>

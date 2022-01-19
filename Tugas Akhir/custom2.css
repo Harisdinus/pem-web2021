@@ -1,0 +1,54 @@
+.tombol {
+    background-color: white;
+    color: black;
+}
+.background-nav {
+    background-color: #1dacd6;
+}
+.wrntext {
+    color: white;
+}
+#meja{
+    background: url("gambar/background-section1.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#whyus {
+    color: transparent;
+    -webkit-text-stroke: 1px #555555;
+}
+#menu {
+    color: transparent;
+    -webkit-text-stroke: 1px #555555;
+}
+.fisHtitle {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.fisH {
+    font-size: 11px;
+    color: #555555;
+}
+#booking {
+    color: transparent;
+    -webkit-text-stroke: 2px #555555;
+    font-weight: 900;
+}
+#pemesanan {
+    background: url("gambar/old-gray-textured-paper-background.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#round{
+    border-radius: 30px 30px 30px 30px;
+    border-color: #555555;
+}
+@font-face {
+    font-family: shojumaru;
+    src: url("Shojumaru/Shojumaru.ttf");
+}
+#namabrand {
+    font-family: shojumaru;
+}
